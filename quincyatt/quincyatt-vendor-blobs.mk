@@ -23,17 +23,10 @@ PRODUCT_COPY_FILES += \
 # Proprietary files
 PRODUCT_COPY_FILES += \
 	vendor/samsung/quincyatt/proprietary/lib/hw/nfc.qcom.so:system/lib/hw/nfc.qcom.so \
-	vendor/samsung/quincyatt/proprietary/lib/libpn544_fw.so:system/lib/libpn544_fw.so \
+	vendor/samsung/quincyatt/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
 	vendor/samsung/quincyatt/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
 	vendor/samsung/quincyatt/proprietary/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
-	vendor/samsung/quincyatt/proprietary/bin/immvibed:system/bin/immvibed \
-	vendor/samsung/quincyatt/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
-	vendor/samsung/quincyatt/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
-	vendor/samsung/quincyatt/proprietary/bin/btnvtool:system/bin/btnvtool \
 	vendor/samsung/quincyatt/proprietary/bin/mpdecision:system/bin/mpdecision \
-	vendor/samsung/quincyatt/proprietary/bin/port-bridge:system/bin/port-bridge \
-	vendor/samsung/quincyatt/proprietary/bin/usbhub:system/bin/usbhub \
-	vendor/samsung/quincyatt/proprietary/bin/usbhub_init:system/bin/usbhub_init \
 	vendor/samsung/quincyatt/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
 	vendor/samsung/quincyatt/proprietary/lib/libacdbmapper.so:system/lib/libacdbmapper.so \
 	vendor/samsung/quincyatt/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
@@ -46,10 +39,12 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/quincyatt/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
 	vendor/samsung/quincyatt/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
 	vendor/samsung/quincyatt/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
+	vendor/samsung/quincyatt/proprietary/lib/egl/libplayback_adreno200.so:system/lib/egl/libplayback_adreno200.so \
 	vendor/samsung/quincyatt/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
 	vendor/samsung/quincyatt/proprietary/lib/libgsl.so:system/lib/libgsl.so \
 	vendor/samsung/quincyatt/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
 	vendor/samsung/quincyatt/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
+	vendor/samsung/quincyatt/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
 	vendor/samsung/quincyatt/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
 	vendor/samsung/quincyatt/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
 	vendor/samsung/quincyatt/proprietary/bin/netmgrd:system/bin/netmgrd \
@@ -74,13 +69,16 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/quincyatt/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
 	vendor/samsung/quincyatt/proprietary/lib/libidl.so:system/lib/libidl.so \
 	vendor/samsung/quincyatt/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
+	vendor/samsung/quincyatt/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
+	vendor/samsung/quincyatt/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
+	vendor/samsung/quincyatt/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
+	vendor/samsung/quincyatt/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
+	vendor/samsung/quincyatt/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
 	vendor/samsung/quincyatt/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
-	vendor/samsung/quincyatt/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
-	vendor/samsung/quincyatt/proprietary/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
 	vendor/samsung/quincyatt/proprietary/lib/libloc_api-rpc-qc.so:system/lib/libloc_api-rpc-qc.so \
-	vendor/samsung/quincyatt/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
 	vendor/samsung/quincyatt/proprietary/lib/libcommondefs.so:system/lib/libcommondefs.so \
-	vendor/samsung/quincyatt/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
+	vendor/samsung/quincyatt/proprietary/lib/librpc.so:system/lib/librpc.so \
+	vendor/samsung/quincyatt/proprietary/lib/hw/sensors.MSM8660_SURF.so:system/lib/hw/sensors.MSM8660_SURF.so \
 	vendor/samsung/quincyatt/proprietary/lib/libakm.so:system/lib/libakm.so \
 	vendor/samsung/quincyatt/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
 	vendor/samsung/quincyatt/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
@@ -92,17 +90,13 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/quincyatt/proprietary/lib/libmmstereo.so:system/lib/libmmstereo.so \
 	vendor/samsung/quincyatt/proprietary/lib/libdiag.so:system/lib/libdiag.so \
 	vendor/samsung/quincyatt/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
-	vendor/samsung/quincyatt/proprietary/etc/wifi/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
-	vendor/samsung/quincyatt/proprietary/etc/wifi/wl:system/etc/wifi/wl \
+	vendor/samsung/quincyatt/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
 	vendor/samsung/quincyatt/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
 	vendor/samsung/quincyatt/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-	vendor/samsung/quincyatt/proprietary/etc/wifi/bcm4330_p2p.bin:system/etc/wifi/bcm4330_p2p.bin \
-	vendor/samsung/quincyatt/proprietary/etc/wifi/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
-	vendor/samsung/quincyatt/proprietary/etc/wifi/bcm4330_mfg.bin:system/etc/wifi/bcm4330_mfg.bin \
+	vendor/samsung/quincyatt/proprietary/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
+	vendor/samsung/quincyatt/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
+	vendor/samsung/quincyatt/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
 	vendor/samsung/quincyatt/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-	vendor/samsung/quincyatt/proprietary/etc/firmware/cyttsp_8660_ffa.hex:system/etc/firmware/cyttsp_8660_ffa.hex \
-	vendor/samsung/quincyatt/proprietary/etc/firmware/cyttsp_8660_fluid_p2.hex:system/etc/firmware/cyttsp_8660_fluid_p2.hex \
-	vendor/samsung/quincyatt/proprietary/etc/firmware/cyttsp_8660_fluid_p3.hex:system/etc/firmware/cyttsp_8660_fluid_p3.hex \
 	vendor/samsung/quincyatt/proprietary/etc/firmware/dsps_fluid.b00:system/etc/firmware/dsps_fluid.b00 \
 	vendor/samsung/quincyatt/proprietary/etc/firmware/dsps_fluid.b01:system/etc/firmware/dsps_fluid.b01 \
 	vendor/samsung/quincyatt/proprietary/etc/firmware/dsps_fluid.b02:system/etc/firmware/dsps_fluid.b02 \
@@ -112,4 +106,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/quincyatt/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
 	vendor/samsung/quincyatt/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
 	vendor/samsung/quincyatt/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-	vendor/samsung/quincyatt/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw
+	vendor/samsung/quincyatt/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
+	vendor/samsung/quincyatt/proprietary/bin/thermald:system/bin/thermald \
+	vendor/samsung/quincyatt/proprietary/etc/thermald.conf:system/etc/thermald.conf \
+	vendor/samsung/quincyatt/proprietary/lib/libdsm.so:system/lib/libdsm.so \
+	vendor/samsung/quincyatt/proprietary/lib/libthermal_mitigation_fusion.so:system/lib/libthermal_mitigation_fusion.so \
+	vendor/samsung/quincyatt/proprietary/lib/libthermal_mitigation.so:system/lib/libthermal_mitigation.so
